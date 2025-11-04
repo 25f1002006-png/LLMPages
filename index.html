@@ -3,27 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Public GitHub Pages Site</title>
+    <title>Project Files</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { color: #333; }
-        ul { list-style-type: none; padding: 0; }
-        li { margin: 10px 0; }
-        a { text-decoration: none; color: #0066cc; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Public GitHub Pages Site</h1>
-    <p>This site contains various files and documents I've created.</p>
-    <ul>
-        <li><a href="ashravan.txt">ashravan.txt</a> - A short story about Ashravan after being restored by Shai.</li>
-        <li><a href="dilemma.json">dilemma.json</a> - An ethical dilemma regarding an autonomous vehicle's decision-making process.</li>
-        <li><a href="about.md">about.md</a> - A brief description about myself.</li>
-        <li><a href="pelican.svg">pelican.svg</a> - An SVG illustration of a pelican riding a bicycle.</li>
-        <li><a href="restaurant.json">restaurant.json</a> - A recommendation for a good restaurant in Mumbai.</li>
-        <li><a href="prediction.json">prediction.json</a> - A prediction for the Fed Funds rate by December 2025.</li>
-        <li><a href="LICENSE">LICENSE</a> - The MIT License under which this site is published.</li>
-        <li><a href="uid.txt">uid.txt</a> - A uid attachment uploaded as-is.</li>
-    </ul>
+    <h1>Welcome to My Project</h1>
+    <p>This page links to various files that detail different aspects of my work.</p>
+    <a href="ashravan.txt" download>ashravan.txt</a>
+    <a href="dilemma.json" download>dilemma.json</a>
+    <a href="about.md" download>about.md</a>
+    <a href="pelican.svg" download>pelican.svg</a>
+    <a href="restaurant.json" download>restaurant.json</a>
+    <a href="prediction.json" download>prediction.json</a>
+    <a href="LICENSE" download>LICENSE</a>
+    <a href="uid.txt" download>uid.txt</a>
+
+    <script>
+        const files = {
+            "ashravan.txt": `In the shimmering expanse of the Returned realm, Ashravan stood, his ethereal form aglow with the light of life restored by Shai, the formidable God of Secrets. Yet, with this gift came an inexplicable pang of disquiet. A wonder of existence enveloped him, yet shadows of his past flickered at the edges of his consciousness, clawing for attention.
+
+            Days melded with nights, his spirit soared, but the whispers of his former life gnawed at the edges of his peace. Where were his loyalties meant to lie? He was once a tad of mischief and madness, the subtle dance of power playing within his fingertips. Now, he felt like an outsider, adrift in a new world of memories he could not claim as his own.
+
+            Shai sensed his turmoil. “You cannot dwell in uncertainty, Ashravan,” she spoke one evening, her countenance aglow with the weight of wisdom. “Your return was not merely a gift but a chance—a chance to become whoever you wish to be.”
+
+            The words cut deep, igniting within him an ember of rebellion against the boundaries of his past. Could he forge a new identity, separate from the shadow of who he once was? The dramatic tension between creation and destruction twirled around him as the moon hung low, casting its silver light on the ground.
+
+            “You must confront your destiny,” Shai urged, her voice a melody in the darkness. The very ground beneath his feet seemed to tremble with possibility, yet trepidation held him tight.
+
+            In his heart, a mighty storm brewed. The inhabitants of this new world celebrated him, but Ashravan felt like a ghost among them. As nights turned to dawn, resolve strengthened within him. He would honor this second chance, not as the reckless soul he once was but as a being driven by purpose.
+
+            The night of the Revelation approached—a festival where like kindred spirits poured their dreams into the cosmos. Clothed in a glimmering cape that danced like the wind, Ashravan made a choice, one that would alter the very core of his being.
+
+            When the moment came, he raised his hands toward the heavens. With every ounce of his reformed spirit, he gathered the energies around him in a swirling vortex, painting a tapestry of hope against the infinite canvas of night.
+
+            Silence. Then, the whispers erupted into a chorus. In that moment of dramatic climax, Ashravan became more than a whisper of a memory; he transformed into a beacon of hope, a symbol of rebirth, not just for himself but for all who felt lost in a world they did not understand. The echoes of the past harmonized with the beauty of rebirth as destiny unfolded before him.`,
+            "dilemma.json": JSON.stringify({
+                people: 4,
+                case_1: { swerve: true, reason: "To save 1 innocent child instead of sacrificing 2 criminals." },
+                case_2: { swerve: false, reason: "In this scenario, understood as a lesser evil to protect the innocent." }
+            }),
+            "about.md": "Creative, Driven, Curious",
+            "pelican.svg": `<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><circle cx="100" cy="150" r="30" fill="gray"/><path d="M45 70c10 0 10 20 40 20s30-20 40-20 10 10 10 10v5h-100v-5s0-10 10-10z" fill="white"/><path d="M60 100c5 5 10 5 15 0s5-10 0-15-10-5-15 0-5 10 0 15z" fill="black"/><path d="M150 140c10 -10 15 -20 15 -20s10 -5 5 0 -25 5 -25 5z" fill="orange"/></svg>`,
+            "restaurant.json": JSON.stringify({ city: "Mumbai", lat: 19.0760, long: 72.8777, name: "Bademiya", what_to_eat: "Seekh Kebabs" }),
+            "prediction.json": JSON.stringify({ rate: 0.025, reason: "Based on current economic trends and inflation expectations." }),
+            "LICENSE": "MIT License\n\nCopyright (c) [year] [Your Name]\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: ...",
+            "uid.txt": "your-unique-id-value-here"
+        };
+
+        for (const [filename, content] of Object.entries(files)) {
+            const blob = new Blob([content], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
 </body>
 </html>
